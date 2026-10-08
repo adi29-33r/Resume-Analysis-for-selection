@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Resume Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Smart Resume Analyzer</h1>
+        <p>Upload your resume and get instant insights.</p>
+    </div>
+
+    <div class="upload-card">
+        <input type="file" id="resumeFile" accept=".pdf,.docx,.txt">
+        <button onclick="uploadResume()">Analyze Resume</button>
+    </div>
+
+    <div id="result" class="result-card" style="display:none;">
+        <h2>Analysis Result</h2>
+
+        <div class="result-item">
+            <strong>Summary:</strong>
+            <p id="summary"></p>
+        </div>
+
+        <div class="result-item">
+            <strong>Skills Detected:</strong>
+            <p id="skills"></p>
+        </div>
+
+        <div class="result-item">
+            <strong>Experience (Years):</strong>
+            <p id="experience"></p>
+        </div>
+
+        <div class="result-item">
+            <strong>Score:</strong>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Resume Analyzer Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Resume Analyzer Dashboard</h1>
+      <p>Upload multiple resumes (PDF / DOCX). Results will be anonymized and ranked.</p>
+    </header>
+
+    <section class="uploader">
+      <input id="resumeFiles" type="file" accept=".pdf,.docx,.txt" multiple />
+      <button id="analyzeBtn">Analyze All Resumes</button>
+      <div id="status"></div>
+    </section>
+
+    <section class="table-wrap">
+      <table id="candidatesTable">
+        <thead>
+          <tr>
+            <th>Candidate</th>
+            <th>Score</th>
+            <th>Rank</th>
+            <th>Pass/Fail</th>
+            <th>Download</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody id="candidatesBody">
+          <!-- rows inserted here -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- Modal for details -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

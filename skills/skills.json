@@ -1,0 +1,7 @@
+{
+  "programming_languages": ["Python", "Java", "C++", "JavaScript"],
+  "cloud_platforms": ["AWS", "Azure", "GCP"],
+  "frameworks": ["FastAPI", "React", "Django", "Node.js"],
+  "databases": ["MySQL", "MongoDB", "PostgreSQL"],
+  "soft_skills": ["Communication", "Leadership", "Time Management"]
+}
